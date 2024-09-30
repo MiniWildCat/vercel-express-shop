@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c81f6"],{5412:function(t,n,s){"use strict";s.r(n);var a=function(){var t=this,n=t._self._c;return n("div",{staticClass:"msg-list"},[t._v(" 会员消息详情 ")])},c=[],e={data(){return{detail:{}}}},i=e,u=s("2877"),l=Object(u["a"])(i,a,c,!1,null,"f4fcb03a",null);n["default"]=l.exports}}]);

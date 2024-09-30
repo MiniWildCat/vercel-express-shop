@@ -1,0 +1,16 @@
+{
+    "home": {
+        "title": "页面标题-首页-后端",
+        "meta": [{
+            "name": "keywords",
+            "content": "home page is metaInfo title"
+        }]
+    },
+    "about": {
+        "title": "页面标题-关于-后端",
+        "meta": [{
+            "name": "keywords",
+            "content": "about page is metaInfo title"
+        }]
+    }
+}

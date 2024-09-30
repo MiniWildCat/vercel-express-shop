@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="在线购物平台" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/logo.ico" />
+    <title><%= metaInfo.title %></title>
+    <% metaInfo.meta.forEach(function(item){ %><meta name="<%= item.name %>" content="<%= item.content %>" /><% }); %>
+    <link rel="stylesheet" href="https://cdn.pickmall.cn/cdn/iview.css" />
+    <link href="/static/css/chunk-01c55936.e529c4e8.css" rel="prefetch" />
+    <link href="/static/css/chunk-035c2fd8.e56abe0c.css" rel="prefetch" />
+    <link href="/static/css/chunk-05dee18c.f3992d13.css" rel="prefetch" />
+    <link href="/static/css/chunk-061bc012.a11d187b.css" rel="prefetch" />
+    <link href="/static/css/chunk-08afa45e.a6e428d3.css" rel="prefetch" />
+    <link href="/static/css/chunk-0a5623ec.4051936e.css" rel="prefetch" />
+    <link href="/static/css/chunk-0e2c6fa9.e14d669c.css" rel="prefetch" />
+    <link href="/static/css/chunk-0eb544d8.b374b3ef.css" rel="prefetch" />
+    <link href="/static/css/chunk-0fd19851.2e5c8914.css" rel="prefetch" />
+    <link href="/static/css/chunk-103c6150.3348966e.css" rel="prefetch" />
+    <link href="/static/css/chunk-187ba511.5d1bd46f.css" rel="prefetch" />
+    <link href="/static/css/chunk-257c0f03.801c597e.css" rel="prefetch" />
+    <link href="/static/css/chunk-26d752f6.75fe0950.css" rel="prefetch" />
+    <link href="/static/css/chunk-335128e8.72ed362f.css" rel="prefetch" />
+    <link href="/static/css/chunk-341e9e00.92befbc6.css" rel="prefetch" />
+    <link href="/static/css/chunk-370b5f22.e54eca10.css" rel="prefetch" />
+    <link href="/static/css/chunk-38840576.38a12a86.css" rel="prefetch" />
+    <link href="/static/css/chunk-39b42510.19daa317.css" rel="prefetch" />
+    <link href="/static/css/chunk-3c3ef4da.88fbce22.css" rel="prefetch" />
+    <link href="/static/css/chunk-3da16ed9.fc22f768.css" rel="prefetch" />
+    <link href="/static/css/chunk-407c5ac6.ddc94ce3.css" rel="prefetch" />
+    <link href="/static/css/chunk-463aaa72.8c0c82b4.css" rel="prefetch" />
+    <link href="/static/css/chunk-4806aa5e.69f88282.css" rel="prefetch" />
+    <link href="/static/css/chunk-4bcbdd4d.a0359c6b.css" rel="prefetch" />
+    <link href="/static/css/chunk-537a8200.e6cafe81.css" rel="prefetch" />
+    <link href="/static/css/chunk-546b9dab.fc5f1908.css" rel="prefetch" />
+    <link href="/static/css/chunk-5a101509.e30f20ff.css" rel="prefetch" />
+    <link href="/static/css/chunk-5a57b867.5ba09fbc.css" rel="prefetch" />
+    <link href="/static/css/chunk-5b52aa5b.fcdd801a.css" rel="prefetch" />
+    <link href="/static/css/chunk-5c522368.2543f26f.css" rel="prefetch" />
+    <link href="/static/css/chunk-64f642c4.cea2079f.css" rel="prefetch" />
+    <link href="/static/css/chunk-6c88673a.43235537.css" rel="prefetch" />
+    <link href="/static/css/chunk-6da25904.6c8f7ef2.css" rel="prefetch" />
+    <link href="/static/css/chunk-744d1bad.43728ce6.css" rel="prefetch" />
+    <link href="/static/css/chunk-7705b2f4.863d53f5.css" rel="prefetch" />
+    <link href="/static/css/chunk-7a8c4ea2.09dfbdb1.css" rel="prefetch" />
+    <link href="/static/css/chunk-7ab51d8e.20745c1d.css" rel="prefetch" />
+    <link href="/static/css/chunk-7d71344a.a700cc46.css" rel="prefetch" />
+    <link href="/static/css/chunk-b8ea542a.637abb15.css" rel="prefetch" />
+    <link href="/static/css/chunk-ce4b95ee.9342dbb0.css" rel="prefetch" />
+    <link href="/static/css/chunk-ddfd1374.649e96bf.css" rel="prefetch" />
+    <link href="/static/css/chunk-e407c66e.cc9e85fe.css" rel="prefetch" />
+    <link href="/static/css/chunk-e6fc98b0.b29d65b0.css" rel="prefetch" />
+    <link href="/static/css/chunk-e9af11aa.0fdf6ce1.css" rel="prefetch" />
+    <link href="/static/css/npm.vue-piczoom.bc805adc.css" rel="prefetch" />
+    <link href="/static/js/chunk-01c55936.b2e6edd3.js" rel="prefetch" />
+    <link href="/static/js/chunk-035c2fd8.3f04f42c.js" rel="prefetch" />
+    <link href="/static/js/chunk-05dee18c.1c33e655.js" rel="prefetch" />
+    <link href="/static/js/chunk-061bc012.2ce723a0.js" rel="prefetch" />
+    <link href="/static/js/chunk-08afa45e.b05335c3.js" rel="prefetch" />
+    <link href="/static/js/chunk-0a5623ec.feccf062.js" rel="prefetch" />
+    <link href="/static/js/chunk-0e2c6fa9.e1b48747.js" rel="prefetch" />
+    <link href="/static/js/chunk-0eb544d8.658f5ce7.js" rel="prefetch" />
+    <link href="/static/js/chunk-0fd19851.668a82de.js" rel="prefetch" />
+    <link href="/static/js/chunk-103c6150.83da79b8.js" rel="prefetch" />
+    <link href="/static/js/chunk-187ba511.d37553d7.js" rel="prefetch" />
+    <link href="/static/js/chunk-257c0f03.0b881411.js" rel="prefetch" />
+    <link href="/static/js/chunk-26d752f6.1dcb3849.js" rel="prefetch" />
+    <link href="/static/js/chunk-2d0c81f6.9d1e8d57.js" rel="prefetch" />
+    <link href="/static/js/chunk-2d0ded30.1f2e381d.js" rel="prefetch" />
+    <link href="/static/js/chunk-2d22c0b5.7b4c5c39.js" rel="prefetch" />
+    <link href="/static/js/chunk-2d2389cb.35a6a9ca.js" rel="prefetch" />
+    <link href="/static/js/chunk-335128e8.6cfc7ac5.js" rel="prefetch" />
+    <link href="/static/js/chunk-341e9e00.4b47f527.js" rel="prefetch" />
+    <link href="/static/js/chunk-370b5f22.20798d1a.js" rel="prefetch" />
+    <link href="/static/js/chunk-38840576.3537a5a3.js" rel="prefetch" />
+    <link href="/static/js/chunk-39b42510.ff76fde1.js" rel="prefetch" />
+    <link href="/static/js/chunk-3c3ef4da.56d6d833.js" rel="prefetch" />
+    <link href="/static/js/chunk-3da16ed9.e9ec5d7d.js" rel="prefetch" />
+    <link href="/static/js/chunk-407c5ac6.21c8c7db.js" rel="prefetch" />
+    <link href="/static/js/chunk-463aaa72.d4393593.js" rel="prefetch" />
+    <link href="/static/js/chunk-4806aa5e.9473a037.js" rel="prefetch" />
+    <link href="/static/js/chunk-4bcbdd4d.67cf369c.js" rel="prefetch" />
+    <link href="/static/js/chunk-537a8200.62d27c31.js" rel="prefetch" />
+    <link href="/static/js/chunk-546b9dab.9185a5f7.js" rel="prefetch" />
+    <link href="/static/js/chunk-5a101509.c3fb7e3b.js" rel="prefetch" />
+    <link href="/static/js/chunk-5a57b867.cbb42199.js" rel="prefetch" />
+    <link href="/static/js/chunk-5b52aa5b.2f82ef7e.js" rel="prefetch" />
+    <link href="/static/js/chunk-5c522368.e98b4d40.js" rel="prefetch" />
+    <link href="/static/js/chunk-64f642c4.650658fd.js" rel="prefetch" />
+    <link href="/static/js/chunk-6c88673a.0bce192f.js" rel="prefetch" />
+    <link href="/static/js/chunk-6da25904.fcad6132.js" rel="prefetch" />
+    <link href="/static/js/chunk-744d1bad.1dd6a09a.js" rel="prefetch" />
+    <link href="/static/js/chunk-7705b2f4.2b3bce93.js" rel="prefetch" />
+    <link href="/static/js/chunk-7a8c4ea2.1692622e.js" rel="prefetch" />
+    <link href="/static/js/chunk-7ab51d8e.03902253.js" rel="prefetch" />
+    <link href="/static/js/chunk-7d71344a.c2286ff2.js" rel="prefetch" />
+    <link href="/static/js/chunk-b8ea542a.29046e96.js" rel="prefetch" />
+    <link href="/static/js/chunk-ce4b95ee.055e849c.js" rel="prefetch" />
+    <link href="/static/js/chunk-ddfd1374.1d04bc67.js" rel="prefetch" />
+    <link href="/static/js/chunk-e407c66e.f64a1e61.js" rel="prefetch" />
+    <link href="/static/js/chunk-e6fc98b0.273f3418.js" rel="prefetch" />
+    <link href="/static/js/chunk-e9af11aa.9a48f7e7.js" rel="prefetch" />
+    <link href="/static/js/npm.dplayer.bf7898e4.js" rel="prefetch" />
+    <link href="/static/js/npm.vue-piczoom.bced8685.js" rel="prefetch" />
+    <link href="/static/js/npm.vue-qr.044fca89.js" rel="prefetch" />
+    <link href="/static/css/app.7a3f7ec0.css" rel="preload" as="style" />
+    <link href="/static/css/npm.swiper.04dbfc0a.css" rel="preload" as="style" />
+    <link href="/static/js/app.a77ce06c.js" rel="preload" as="script" />
+    <link
+      href="/static/js/chunk-vendors.28558bf1.js"
+      rel="preload"
+      as="script" />
+    <link href="/static/js/npm.buffer.57b5627a.js" rel="preload" as="script" />
+    <link href="/static/js/npm.psl.02696407.js" rel="preload" as="script" />
+    <link href="/static/js/npm.qs.2a137b51.js" rel="preload" as="script" />
+    <link
+      href="/static/js/npm.readable-stream.5f13d0f3.js"
+      rel="preload"
+      as="script" />
+    <link href="/static/js/npm.swiper.57639676.js" rel="preload" as="script" />
+    <link href="/static/js/npm.url.d52a5c5f.js" rel="preload" as="script" />
+    <link href="/static/js/runtime.23dfe6dd.js" rel="preload" as="script" />
+    <link href="/static/css/npm.swiper.04dbfc0a.css" rel="stylesheet" />
+    <link href="/static/css/app.7a3f7ec0.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="https://cdn.pickmall.cn/cdn/vue.min.js"></script>
+    <script src="https://cdn.pickmall.cn/cdn/vuex.min.js"></script>
+    <script src="https://cdn.pickmall.cn/cdn/vue-router.min.js"></script>
+    <script src="https://cdn.pickmall.cn/cdn/axios0.19.2.js"></script>
+    <script src="https://cdn.pickmall.cn/cdn/iview.min.js"></script>
+    <script src="https://cdn.pickmall.cn/cdn/js.cookie.min.js"></script>
+    <script src="/config.js"></script>
+    <noscript
+      ><strong
+        >We're sorry but lilishop doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app"></div>
+    <script src="/static/js/runtime.23dfe6dd.js"></script>
+    <script src="/static/js/npm.readable-stream.5f13d0f3.js"></script>
+    <script src="/static/js/npm.qs.2a137b51.js"></script>
+    <script src="/static/js/npm.swiper.57639676.js"></script>
+    <script src="/static/js/npm.psl.02696407.js"></script>
+    <script src="/static/js/npm.buffer.57b5627a.js"></script>
+    <script src="/static/js/npm.url.d52a5c5f.js"></script>
+    <script src="/static/js/chunk-vendors.28558bf1.js"></script>
+    <script src="/static/js/app.a77ce06c.js"></script>
+  </body>
+</html>
