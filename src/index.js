@@ -63,7 +63,7 @@ app.get('*', function(req, res) {
                 }]
             }
             const {routes} = require('../public/router.js')
-            const {searchList,searchListCallback} = require('./head')
+            const {searchList,searchListCallback} = require('./head/index.js')
            if(frontPath == '/nuxt'){
             try{
                 superagent.get(decodeURI(req.query.url))
@@ -117,3 +117,5 @@ var server = app.listen(7001, function() {
     var port = server.address().port
     console.log("应用实例，访问地址为 http://%s:%s", host, port)
 })
+
+module.exports = app;
