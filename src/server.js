@@ -9,8 +9,6 @@ charset(superagent);
 
 var app = express();
 app.use(cors())
-// 避免直接访问静态资源
-app.use(express.static('public'))
 
 // 相对路径前缀
 const dir = "../public"
