@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "vercel": "^37.6.0"
   },
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "vercel_dev": "vercel dev",
+    "build": "vercel dev"
   },
   "author": "",
   "license": "ISC",
