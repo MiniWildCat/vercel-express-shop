@@ -9,9 +9,13 @@ charset(superagent);
 
 var app = express();
 app.use(cors())
+// 静态资源访问
+app.use(express.static(__dirname + '/public'));
 
+const {routes} = require('./public/router.js')
+const {searchList,searchListCallback} = require('./src/head/index.js')
 // 相对路径前缀
-const dir = "../public"
+const dir = "/public"
 // 匹配所有路径
 app.get('*', function(req, res) {
     if(req.path.endsWith('.css') || req.path.endsWith('.js') || req.path.endsWith('.map') || req.path.endsWith('.png') || req.path.endsWith('.jpg') || req.path.endsWith('.ico') || req.path.endsWith('.svg')){
@@ -20,7 +24,7 @@ app.get('*', function(req, res) {
         return;
     }else{
         // 其余路径需要经过 ejs 模板引擎渲染
-        fs.readFile(path.join(__dirname,dir +'/index.html'),'utf8',async function(err,data){
+        fs.readFile(path.join(__dirname,dir +'/200.html'),'utf8',async function(err,data){
             let frontPath = req.path;
             console.log("head path:",frontPath)
             // const metaInfoMap = {
@@ -40,7 +44,7 @@ app.get('*', function(req, res) {
             //     }
             // }
             // 解析router.json
-            // const router = require('../public/router.json')
+            // const router = require('public/router.json')
             // console.log("router:",router)
             // const metaInfoMap = router;
             // let metaInfo = {title: '',meta: []}
@@ -62,8 +66,6 @@ app.get('*', function(req, res) {
                     "content": "lilishop购物商城，什么都有的卖"
                 }]
             }
-            const {routes} = require('../public/router.js')
-            const {searchList,searchListCallback} = require('./head/index.js')
            if(frontPath == '/nuxt'){
             try{
                 superagent.get(decodeURI(req.query.url))

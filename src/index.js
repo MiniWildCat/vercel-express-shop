@@ -1,4 +1,4 @@
-const app = require('./server');
+const app = require('../server');
 var server = app.listen(7001, function() {
     // var host = server.address().address
     var host = 'localhost'
